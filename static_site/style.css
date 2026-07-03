@@ -1,0 +1,411 @@
+/* =================================================== */
+/* 과천도시공사 인사·ERP 통합검색 프로그램 - 디자인(CSS)   */
+/* =================================================== */
+
+body {
+    font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+header {
+    background-color: #003865;
+    color: white;
+    padding: 24px 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 6px 0 0 0;
+    font-size: 14px;
+    color: #cfe0ee;
+}
+
+main {
+    max-width: 1450px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #003865;
+}
+
+.hint {
+    color: #777;
+    font-size: 13px;
+}
+
+button {
+    background-color: #003865;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+button:hover {
+    background-color: #00538f;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.file-list li {
+    padding: 8px 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.file-list li:last-child {
+    border-bottom: none;
+}
+
+.page-preview {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.excel-preview {
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 13px;
+}
+
+.excel-preview th, .excel-preview td {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.excel-preview th {
+    background-color: #f0f4f8;
+    color: #003865;
+}
+
+details summary {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #003865;
+    list-style: none;
+    padding: 4px 0;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 12px;
+    color: #888;
+    transition: transform 0.15s ease;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.match-count {
+    color: #888;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+details > *:not(summary) {
+    margin-top: 12px;
+}
+
+.hwpx-section-text {
+    margin-top: 8px;
+}
+
+.hwpx-heading {
+    font-weight: bold;
+    color: #003865;
+    font-size: 15px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.hwpx-heading:first-child {
+    margin-top: 0;
+}
+
+.hwpx-line {
+    margin-bottom: 6px;
+    line-height: 1.8;
+    color: #333;
+    font-size: 14px;
+}
+
+.hwpx-table {
+    margin: 10px 0;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 13px;
+}
+
+.hwpx-table td {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.hero-search {
+    text-align: center;
+    padding: 50px 20px 40px;
+}
+
+.hero-search h2 {
+    font-size: 22px;
+    color: #003865;
+    margin: 0 0 8px;
+}
+
+.hero-search .hint {
+    margin-bottom: 22px;
+}
+
+.search-form-big {
+    display: flex;
+    max-width: 560px;
+    margin: 0 auto;
+    border: 2px solid #003865;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-form-big input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 14px 22px;
+    font-size: 16px;
+    width: auto;
+}
+
+.search-form-big input[type="text"]:focus {
+    outline: none;
+}
+
+.search-form-big button {
+    border-radius: 0;
+    padding: 0 28px;
+    font-size: 15px;
+    margin-left: 0;
+}
+
+.bottom-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card-small {
+    padding: 16px 20px;
+}
+
+.card-small h3 {
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.header-logo {
+    height: 48px;
+    width: auto;
+}
+
+.header-top h1 {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0 30px;
+}
+
+.footer-logo {
+    height: 48px;
+    width: auto;
+    opacity: 0.7;
+}
+
+.search-layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.category-filter {
+    flex: 0 0 260px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.category-filter h3 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #003865;
+}
+
+.search-results {
+    flex: 1;
+    min-width: 0;
+}
+
+.category-browser {
+    margin-bottom: 24px;
+}
+
+.cat-tree {
+    margin-bottom: 8px;
+}
+
+.doc-list {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 4px;
+}
+
+.doc-list::-webkit-scrollbar {
+    height: 4px;
+}
+
+.doc-list::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 2px;
+}
+
+.doc-list li {
+    padding: 4px 0;
+    font-size: 14px;
+}
+
+.doc-list a {
+    color: #003865;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.doc-list a:hover {
+    text-decoration: underline;
+}
+
+.doc-list a.doc-hit {
+    color: #0c447c;
+    font-weight: 600;
+    background: #eef4fa;
+    border-radius: 4px;
+    padding: 3px 6px;
+    margin: -3px -6px;
+}
+
+.search-form-header {
+    display: flex;
+    max-width: 380px;
+    margin-top: 14px;
+    border: 1.5px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-form-header input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 8px 14px;
+    font-size: 13px;
+    outline: none;
+}
+
+.search-form-header button {
+    background-color: #00538f;
+    border-radius: 0;
+    padding: 0 18px;
+    font-size: 13px;
+    margin-left: 0;
+}
+
+.search-form-header button:hover {
+    background-color: #0067ad;
+}
+
+.back-link {
+    display: inline-block;
+    color: #0c447c;
+    text-decoration: none;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    background: #ffeb3b;
+    font-weight: bold;
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+.header-search-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-full {
+    height: 60px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
