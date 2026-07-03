@@ -27,7 +27,7 @@ import openpyxl
 # 경로 설정
 # -----------------------------------------------------
 UPLOAD_FOLDER = "uploads"
-OUTPUT_FOLDER = os.path.join("static_site")
+OUTPUT_FOLDER = os.path.join("docs")
 OUTPUT_IMAGE_FOLDER = os.path.join(OUTPUT_FOLDER, "images")
 OUTPUT_DATA_FILE = os.path.join(OUTPUT_FOLDER, "data.js")
 
